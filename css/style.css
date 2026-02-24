@@ -6,7 +6,8 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    font-family: "Liu Jian Mao Cao", cursive;
+    background: #eee;
+    color: #333;
 }
 
 p {
@@ -20,4 +21,144 @@ h1, h2, h3, h4 {
 a {
     color: #333;
     text-decoration: none;
+}
+
+strong {
+    color: #f1c40f;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+/* class */
+
+.container {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+/* vp + header */
+
+.vp-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 1rem 2rem;
+    background: #333;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    line-height: 1.8rem;
+
+    & .vp-logo {
+        margin-bottom: 0;
+        font-family: "Long Cang", cursive;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            color: #f1c40f;
+            font-size: 1.8rem;
+            margin-right: 0.5rem;
+        }
+
+        a {
+            font-size: 3.5rem;
+            font-weight: 300;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+
+        li {
+            padding: 1rem;
+
+            a:hover {
+                color: #f1c40f;
+            }
+        }
+    }
+}
+
+.vp {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/frame.jpg) center center/cover;
+}
+
+.vp-content {
+    max-width: 800px;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 2rem;
+    }
+}
+
+/* offer */
+
+.offer {
+    padding: 10rem 1rem;
+
+    .offer-list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        .offer-elem {
+            border: 1px solid #ddd;
+            background: #fff;
+            margin: 1rem;
+            flex: 1;
+
+            .offer-elem-img {
+                width: 100%;
+            }
+
+            .offer-elem-text {
+                padding: 2rem;
+                text-align: center;
+
+                .offer-separator {
+                    margin: 1rem auto;
+                    height: 2px;
+                    width: 50px;
+                    background: #333;
+                }
+            }
+        }
+    }
 }
