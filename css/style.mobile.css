@@ -1,0 +1,45 @@
+/* vp + header */
+
+header {
+    flex-direction: column;
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+
+        li {
+            margin-top: 1.5rem;
+            padding: 0.5rem;
+            border-bottom: 1px dotted #ddd;
+        }
+    }
+}
+
+.vp {
+    padding: 3rem 0;
+}
+
+.vp-content {
+
+    padding: 0 2rem;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* offer */
+
+.offer {
+    padding: 5rem 1rem;
+    text-align: center;
+
+    .offer-list {
+        flex-direction: column;
+    }
+}
