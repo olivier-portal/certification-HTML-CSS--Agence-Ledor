@@ -179,13 +179,11 @@ header {
 .who {
     display: flex;
     flex-flow: row nowrap;
+    min-height: 600px;
 
     .who-img {
         flex: 1;
-
-        img {
-            width: 100%;
-        }
+        background: url(../images/team.jpg) center center/cover;
     }
 
      .who-text {

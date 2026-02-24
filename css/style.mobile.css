@@ -1,3 +1,9 @@
+/* class */
+
+.title {
+    text-align: center;
+}
+
 /* vp + header */
 
 header {
@@ -41,5 +47,63 @@ header {
 
     .offer-list {
         flex-direction: column;
+    }
+}
+
+/* who */
+
+.who {
+    flex-direction: column-reverse;
+        
+    .who-img {
+        min-height: 300px;
+    }
+
+    .who-text {
+      padding: 4rem 2rem;
+    }
+}
+
+/* testimonials */
+
+.testimonials {
+    
+    .testimonials-content {
+
+        .testimonials-elem {
+            flex-direction: column;
+        }
+
+        .testimonials-elem-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .testimonials-elem-profil {
+            margin-bottom: 2rem;
+
+                p {
+                    text-align: center;
+                }
+
+                img {
+                    display: block;
+                    margin: auto;
+                }
+        }
+
+    }      
+            
+}
+
+/* contact */
+
+.contact {
+    padding: 5rem 1rem;
+    
+.contact-form {
+
+        button {
+            margin: 3rem auto 0 auto;
+        }
     }
 }
